@@ -1,0 +1,25 @@
+.splash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #1f3b4d;
+}
+
+.logo {
+  width: 150px; /* Logonun boyutunu ayarlayabilirsin */
+  margin-bottom: 20px;
+}
+
+.slogan {
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px; /* Sloganın altında boşluk bırak */
+}
+
+.animation {
+  width: 300px;
+  height: 300px;
+}

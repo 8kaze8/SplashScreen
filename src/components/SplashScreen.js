@@ -1,30 +1,30 @@
-// src/components/SplashScreen.js
-import React, { useEffect } from "react";
-import { Lottie } from "lottie-react";
-import animationData from "../lotties/photoVerifyAnimation.json"; // Lottie animasyon dosyasının yolu
-import "./SplashScreen.css"; // CSS dosyası
+import React from "react";
+import Lottie from "lottie-react";
+import animationData from "../lotties/photoVerifyAnimation.json";
+import "./SplashScreen.css";
 
-const SplashScreen = ({ onFinish }) => {
-  useEffect(() => {
-    // Animasyon 3 saniye sonra sona erdiğinde bir şeyler yapılacak
-    const timer = setTimeout(() => {
-      onFinish(); // Geçiş fonksiyonunu çalıştır
-    }, 3000);
-
-    // Temizleme fonksiyonu
-    return () => clearTimeout(timer);
-  }, [onFinish]);
-
+const SplashScreen = () => {
   return (
     <div className="splash-container">
+      {/* Logonun konumu */}
+      <img
+        src="../assets/logo/PhotoVerifyLogo.jpg"
+        alt="Logo"
+        className="logo"
+      />
+
+      {/* Slogan */}
+      <p className="slogan">
+        Welcome to PhotoVerify - AI-powered image analysis at your fingertips.
+      </p>
+
+      {/* Animasyon */}
       <Lottie
         animationData={animationData}
         loop={false}
         className="animation"
+        speed={0.5}
       />
-      <p className="text">
-        Welcome to PhotoVerify - AI-powered image analysis at your fingertips.
-      </p>
     </div>
   );
 };
