@@ -6,17 +6,12 @@ import "./SplashScreen.css";
 const SplashScreen = () => {
   return (
     <div className="splash-container">
-      {/* Logonun konumu */}
+      {/* Logo */}
       <img
-        src="../assets/logo/PhotoVerifyLogo.jpg"
+        src={require("../assets/logo/PhotoVerifyLogo.jpg")}
         alt="Logo"
         className="logo"
       />
-
-      {/* Slogan */}
-      <p className="slogan">
-        Welcome to PhotoVerify - AI-powered image analysis at your fingertips.
-      </p>
 
       {/* Animasyon */}
       <Lottie
@@ -25,6 +20,11 @@ const SplashScreen = () => {
         className="animation"
         speed={0.5}
       />
+
+      {/* Slogan */}
+      <p className="slogan">
+        Welcome to PhotoVerify - AI-powered image analysis at your fingertips.
+      </p>
     </div>
   );
 };

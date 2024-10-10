@@ -1,25 +1,30 @@
+/* src/components/SplashScreen.css */
 .splash-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  height: 100vh;
-  background-color: #1f3b4d;
+  justify-content: center; /* Dikeyde ortalayalım */
+  align-items: center; /* Yatayda ortalayalım */
+  height: 100vh; /* Tüm ekranı kaplasın */
+  background-color: #1c3144;
+  padding: 0 20px; /* Yandan biraz boşluk ekleyelim */
+  box-sizing: border-box; /* Taşma olmasın */
 }
 
 .logo {
-  width: 150px; /* Logonun boyutunu ayarlayabilirsin */
-  margin-bottom: 20px;
-}
-
-.slogan {
-  font-size: 18px;
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 20px; /* Sloganın altında boşluk bırak */
+  width: 120px; /* Logonun genişliğini biraz küçültelim */
+  height: auto;
+  margin-bottom: 20px; /* Logonun altında biraz boşluk bırakalım */
 }
 
 .animation {
-  width: 300px;
-  height: 300px;
+  width: 250px; /* Animasyon boyutunu biraz küçültelim */
+  height: 250px;
+  margin-bottom: 10px; /* Animasyon ve slogan arasında az boşluk bırak */
+}
+
+.slogan {
+  font-size: 16px; /* Font boyutunu küçültelim */
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px; /* Slogan ve animasyon arasındaki boşluğu azalt */
 }
