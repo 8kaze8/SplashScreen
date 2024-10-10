@@ -1,0 +1,21 @@
+/* src/components/SplashScreen.css */
+.splash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #1f3b4d; /* Arka plan rengi */
+}
+
+.animation {
+  width: 300px;
+  height: 300px;
+}
+
+.text {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ffffff; /* Yazı rengi */
+  text-align: center;
+}
